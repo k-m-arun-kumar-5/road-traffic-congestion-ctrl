@@ -1,16 +1,10 @@
 ﻿Description :
 =============
-I,  K.M. Arun Kumar alias Arunkumar Murugeswaran, just shared my works, which I worked as learning path and practiced Embedded C programming using PIC16F887 (Microchip's 8 bit microcontroller in PIC16 family) for interface of LED, Switch, 7 Segment LED, Keypad and LCD, Timer, ADC, Interrupt, UART, EEPROM, RTC, SPI, I2C, GSM and CCP. Other features are not implemented. 
-
-Projects, using PIC16F887, are included with Design, development, implemented, simulated and tested, by using a simulator are as follows :
-===========================================================================================================================================
- 1: smart milk vending machine. 
- 2: Simple Digital Single phase Electric Motor Controller controlled by Electric current.
- 3: Simple Digital Single phase Electric Motor Controller controlled by Electric Voltage.
- 4: Soil moisture based Water spraying system for nursery farms.
- 5: Traffic density congestion control based traffic signal controller.
- 6: Construction automation for mixing of cement, sand and water in the construction mixture equipment. 
- 7: In LCD, running text is displayed either to left or to right with specified number of gaps between consecutive same text display.
+I,  K.M. Arun Kumar alias Arunkumar Murugeswaran, just shared my works, which I worked as learning path and practiced Embedded C programming using PIC16F887 (Microchip's 8 bit microcontroller in PIC16 family) such as 4 way traffic control sequence on one lane present in each way with GO sequence E-W-N-S
+direction, with density control. Next sequence direction Go means next direction traffic GO state eg, if in east direction traffic is
+in GO, then next direction traffic GO is West. If next sequence directions traffic congestion are in level 0 ie less traffic congestion,
+then use normal level 0 Green for next sequence direction traffic GO, eg if in east direction traffic is in GO, then in West GO duration = normal level 0 West GO duration time. If next sequence direction has level 1 traffic congestion ie level 1 congestion more than level 0 congestion, then switching to this sequence will have more green duration time than level 0 green duration time. eg.if in east direction traffic is in GO, then in West GO duration = level 1 West GO
+duration time and level 1 West GO duration time > level 0 West GO duration time. If next sequence direction has level 2 traffic congestion ie, level 2 congestion more than level 1 congestion, then switching to this sequence will have more green duration time than level 1 green duration time. eg.if in east direction traffic is in GO, then in West GO duration = level 2 West GO duration time and level 2 West GO duration time > level 1 West GO duration time. We use IR_LEVEL1_SW PRESSED ON to indicate level 1 congestion and IR_LEVEL2_SW PRESSED ON to indicate level 2 congestion for each direction.
 
 CAUTION:
 ========
